@@ -3,7 +3,7 @@
 This is the C Pwn library for VirtualBox's HGCM and Chromium Protocol.Just same as the ```niklasb```'s [3dpwn](https://github.com/niklasb/3dpwn),but this is a C library.If you want to know more about HGCM and Chromium  Analyse,you can view my [blog](https://www.anquanke.com/member/146878)
 
 ## files
-the ```exp.c```was a exploit for VirtualBox-6.0.0 Nday by using ```crUnpackExtendShaderSource``` and```crUnpackExtendGetUniformLocation```'s vulnerability and other files was the C library.
+the ```exp.c```was a exploit for VirtualBox-6.0.0 Nday by using ```crUnpackExtendShaderSource``` and```crUnpackExtendGetUniformLocation```'s vulnerability and the ```qwb2020_VbEscape_exp.c``` was a exploit for qwb2020's ```VbEscape```,other files was the C library.
 
 ## How to use
 first you need to open the driver
