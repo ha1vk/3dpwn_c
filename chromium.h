@@ -19,6 +19,7 @@
 unsigned char crmsg_buf[0x1000];
 int alloc_buf(int client,int size,const void *msg,int msg_len);
 int write_buf(int client,int buf_id,int size,int offset,const void *msg,int msg_len);
+int write_buf_test(int client,int buf_id,int size);
 int read_hostbuf(int client,int size,void *buf);
 int set_version(int client);
 int crmsg_with_bufid(int client,int buf_id);

@@ -26,6 +26,14 @@ int write_buf(int client,int buf_id,int size,int offset,const void *msg,int msg_
    return ans_buf[0];
 }
 
+int write_buf_test(int client,int buf_id,int size) {
+   int rc = hgcm_call(client,SHCRGL_GUEST_FN_WRITE_BUFFER,"%u%u%u%b",buf_id,size,0,"in","test",5);
+   if (rc) {
+      return 1;
+   }
+   return 0;
+}
+
 int read_hostbuf(int client,int size,void *buf) {
    int rc = hgcm_call(client,SHCRGL_GUEST_FN_READ,"%b%u","out",buf,size,size);
    if (rc) {
